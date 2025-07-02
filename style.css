@@ -1,0 +1,111 @@
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: #e0f7e9;
+  padding: 30px 15px; 
+  margin: 0;
+}
+
+h1 {
+  color: #2e7d32;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #66bb6a;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#recipe-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe {
+  animation: spin 0.6s ease;
+  max-width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+}
+
+.recipe img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.recipe h2 {
+  margin: 10px 0 15px 0;
+  color: #388e3c;
+  text-align: center;
+}
+
+.recipe ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.recipe ul li {
+  margin-bottom: 6px;
+}
+
+.recipe p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive*/
+@media (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 12px 15px;
+  }
+
+  #recipe-container {
+    margin-top: 20px;
+  }
+
+  .recipe {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .recipe img {
+    max-width: 100%;
+  }
+}
